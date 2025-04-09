@@ -92,12 +92,16 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href={`https://wa.me/+2341234567890?text=${encodeURIComponent(
+                "Hello! I would like to get a quote for your surveying services."
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-4 px-5 py-2.5 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-all duration-300 shadow-sm"
             >
               Get a Quote
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Navigation Button */}
@@ -139,12 +143,16 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <div className="pt-2 mt-2 border-t">
-                  <Link
-                    to="/contact"
+                  <a
+                    href={`https://wa.me/+2341234567890?text=${encodeURIComponent(
+                      "Hello! I would like to get a quote for your surveying services."
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full text-center px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                   >
                     Get a Quote
-                  </Link>
+                  </a>
                 </div>
               </div>
             </motion.div>

@@ -143,8 +143,8 @@ const Home = () => {
               Precision Surveying Solutions
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-white/90 font-light">
-              With over 15 years of expertise, Lorins Consults delivers accurate
-              surveying services for projects of any scale across Nigeria.
+              Lorins Consults provides professional land surveying services
+              across Nigeria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -153,12 +153,16 @@ const Home = () => {
               >
                 Our Services
               </Link>
-              <Link
-                to="/contact"
+              <a
+                href={`https://wa.me/+2341234567890?text=${encodeURIComponent(
+                  "Hello! I would like to get a quote for your surveying services."
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn bg-white text-blue-800 hover:bg-gray-100 text-lg px-8 py-4"
               >
                 Get a Quote
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -180,16 +184,8 @@ const Home = () => {
                 Consultancy
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                At Lorins Consults, we combine cutting-edge technology with
-                decades of expertise to deliver surveying solutions that exceed
-                expectations. Our team of certified surveyors is committed to
-                precision, integrity, and excellence in every project.
-              </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Whether you need cadastral surveys for legal documentation,
-                topographic surveys for development planning, or engineering
-                surveys for construction projects, we provide reliable data that
-                you can trust.
+                Delivering precision surveying with cutting-edge technology. Our
+                certified surveyors provide reliable data you can trust.
               </p>
               <Link
                 to="/about"
@@ -252,9 +248,8 @@ const Home = () => {
               Our Specialized Services
             </h2>
             <p className="text-lg text-gray-700">
-              We offer a comprehensive range of surveying services to meet the
-              diverse needs of our clients, from individuals to large
-              corporations and government agencies.
+              Lorins Consults offers comprehensive surveying solutions for all
+              your needs.
             </p>
           </div>
 
@@ -341,8 +336,7 @@ const Home = () => {
               Featured Projects
             </h2>
             <p className="text-lg text-gray-700">
-              Explore some of our recent projects that showcase our expertise
-              and commitment to excellence.
+              Lorins Consults' showcase of our expertise and excellence.
             </p>
           </div>
 
@@ -480,8 +474,8 @@ const Home = () => {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-              Contact us today for a free consultation and quote. Our team is
-              ready to help you with your surveying needs.
+              Contact Lorins Consults today for a free consultation and quote.
+              Our team is ready to help you with your surveying needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
