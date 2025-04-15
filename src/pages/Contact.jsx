@@ -92,7 +92,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white"
                       placeholder="Enter your phone number"
                     />
                   </div>
@@ -180,7 +180,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows="4"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white"
                     placeholder="Tell us about your project or inquiry"
                   ></textarea>
                 </div>
@@ -236,9 +236,9 @@ const Contact = () => {
                         Address
                       </h3>
                       <p className="text-gray-600 mt-1">
-                        123 Adeola Odeku Street, Victoria Island
+                        IMAFAM SHOPPING COMPLEX, Beside Poplat petrol station, Cele -Bustop, Iwo road,
                         <br />
-                        Lagos, Nigeria
+                        ibadan, Oyo State, Nigeria
                       </p>
                     </div>
                   </div>
@@ -263,7 +263,7 @@ const Contact = () => {
                       <h3 className="text-lg font-semibold text-gray-900">
                         Phone
                       </h3>
-                      <p className="text-gray-600 mt-1">+234 123 456 7890</p>
+                      <p className="text-gray-600 mt-1">+234 703 790 5846</p>
                     </div>
                   </div>
 
@@ -288,7 +288,7 @@ const Contact = () => {
                         Email
                       </h3>
                       <p className="text-gray-600 mt-1">
-                        info@lorinsconsults.com
+                        lorinsconsults@gmail.com
                       </p>
                     </div>
                   </div>
