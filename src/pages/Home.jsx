@@ -118,15 +118,15 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="w-full">
       {/* Hero Section - Full screen with parallax effect */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen w-full flex items-center justify-center">
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1566974718480-e01ac14e5961?q=80&w=1740&auto=format&fit=crop')",
-            backgroundAttachment: "fixed",
+            backgroundAttachment: "scroll",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-black/70"></div>
@@ -137,7 +137,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto"
+            className="max-w-3xl mx-auto pt-20"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
               Precision Surveying Solutions

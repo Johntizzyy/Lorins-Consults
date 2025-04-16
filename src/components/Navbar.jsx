@@ -39,18 +39,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled 
-          ? "bg-white shadow-lg py-3" 
-          : "bg-transparent py-5"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? "bg-white shadow-lg py-3" : "bg-transparent py-5"
       }`}
+      style={{ position: "fixed", width: "100%" }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link 
-            to="/" 
-            className="flex items-center space-x-3"
-          >
+          <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <svg
                 className="w-7 h-7 text-white"
@@ -66,9 +62,11 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <span className={`text-2xl font-bold transition-colors duration-300 ${
-              scrolled ? "text-blue-600" : "text-white"
-            }`}>
+            <span
+              className={`text-2xl font-bold transition-colors duration-300 ${
+                scrolled ? "text-blue-600" : "text-white"
+              }`}
+            >
               Lorins Consults
             </span>
           </Link>
@@ -85,8 +83,8 @@ const Navbar = () => {
                       ? "text-blue-600 bg-blue-50"
                       : "text-white bg-white/20"
                     : scrolled
-                      ? "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
-                      : "text-white/90 hover:text-white hover:bg-white/10"
+                    ? "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+                    : "text-white/90 hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.name}
@@ -105,15 +103,23 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation Button */}
-          <button 
+          <button
             className="lg:hidden p-2 rounded-md focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              <XMarkIcon className={`h-6 w-6 ${scrolled ? "text-gray-900" : "text-white"}`} />
+              <XMarkIcon
+                className={`h-6 w-6 ${
+                  scrolled ? "text-gray-900" : "text-white"
+                }`}
+              />
             ) : (
-              <Bars3Icon className={`h-6 w-6 ${scrolled ? "text-gray-900" : "text-white"}`} />
+              <Bars3Icon
+                className={`h-6 w-6 ${
+                  scrolled ? "text-gray-900" : "text-white"
+                }`}
+              />
             )}
           </button>
         </div>
@@ -134,8 +140,8 @@ const Navbar = () => {
                     key={link.name}
                     to={link.path}
                     className={`block px-4 py-3 rounded-lg text-gray-700 ${
-                      isActive(link.path) 
-                        ? "bg-blue-50 text-blue-600 font-medium" 
+                      isActive(link.path)
+                        ? "bg-blue-50 text-blue-600 font-medium"
                         : "hover:bg-gray-50"
                     }`}
                   >
