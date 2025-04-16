@@ -237,7 +237,7 @@ const Footer = () => {
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-500 text-sm">
-                Designed with ❤️ for precision and excellence
+                Designed with ❤️ by <strong>Johntizzy</strong>
               </p>
             </div>
           </div>
