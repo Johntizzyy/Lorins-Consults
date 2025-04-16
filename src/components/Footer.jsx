@@ -46,7 +46,7 @@ const Footer = () => {
                 </svg>
               </div>
               <span className="text-2xl font-bold text-white">
-                Lorins ConsultS
+                Lorins Consults
               </span>
             </div>
             <p className="text-gray-400 mb-8 leading-relaxed">
@@ -180,7 +180,7 @@ const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span className="text-gray-400">+234 703 790 5846</span>
+                <span className="text-gray-400">+234 123 456 7890</span>
               </li>
               <li className="flex items-start">
                 <svg
@@ -196,7 +196,7 @@ const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span className="text-gray-400">lorinsconsults@gmail.com</span>
+                <span className="text-gray-400">info@lorinsconsults.com</span>
               </li>
               <li className="flex items-start">
                 <svg
@@ -219,11 +219,11 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray-400">
-                  IMAFAM SHOPPING COMPLEX, Beside Poplat petrol station,
+                  123 Adeola Odeku Street,
                   <br />
-                  Cele bustop, Iwo road,
+                  Victoria Island,
                   <br />
-                  ibadan, Nigeria
+                  Lagos, Nigeria
                 </span>
               </li>
             </ul>
