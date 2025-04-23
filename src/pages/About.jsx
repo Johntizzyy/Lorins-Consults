@@ -122,24 +122,72 @@ const About = () => {
       description: "Boundary survey for a major waterfront development",
       imageUrl:
         "https://images.unsplash.com/photo-1618411340482-9b09509bc193?q=80&w=776&auto=format&fit=crop",
+      size: "large",
+      orientation: "landscape",
     },
     {
       title: "Abuja Residential Estate",
       description: "Topographic survey for a 50-acre residential development",
       imageUrl:
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=870&auto=format&fit=crop",
+      size: "medium",
+      orientation: "portrait",
     },
     {
       title: "Port Harcourt Industrial Park",
       description: "Engineering survey for infrastructure development",
       imageUrl:
         "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=872&auto=format&fit=crop",
+      size: "small",
+      orientation: "landscape",
     },
     {
       title: "Kano Urban Development",
       description: "Cadastral survey for urban planning project",
       imageUrl:
         "https://images.unsplash.com/photo-1477936821694-ec4233a9a1a0?q=80&w=874&auto=format&fit=crop",
+      size: "medium",
+      orientation: "portrait",
+    },
+    {
+      title: "Lekki Free Trade Zone",
+      description: "Infrastructure planning and development survey",
+      imageUrl:
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop",
+      size: "small",
+      orientation: "landscape",
+    },
+    {
+      title: "Eko Atlantic City",
+      description: "Coastal development and reclamation survey",
+      imageUrl:
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=870&auto=format&fit=crop",
+      size: "large",
+      orientation: "landscape",
+    },
+    {
+      title: "Victoria Island Expansion",
+      description: "Urban development and infrastructure survey",
+      imageUrl:
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=870&auto=format&fit=crop",
+      size: "medium",
+      orientation: "portrait",
+    },
+    {
+      title: "Ikeja Business District",
+      description: "Commercial property development survey",
+      imageUrl:
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop",
+      size: "small",
+      orientation: "landscape",
+    },
+    {
+      title: "Lagos Island Redevelopment",
+      description: "Historic district preservation and modernization survey",
+      imageUrl:
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop",
+      size: "medium",
+      orientation: "portrait",
     },
   ];
 
@@ -236,19 +284,18 @@ const About = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
               Mission & Vision
             </h2>
             <p className="text-lg text-gray-700">
-              Our guiding principles that shape every project we undertake and
-              every client relationship we build.
+              Our guiding principles that shape every project we undertake and every client relationship we build.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -268,13 +315,7 @@ const About = () => {
                   Our Mission
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To provide accurate, reliable, and professional surveying
-                  services that meet and exceed our clients' expectations, while
-                  maintaining the highest standards of integrity and technical
-                  excellence. We are committed to continuous learning and
-                  development, ensuring our team stays at the forefront of
-                  surveying technology and best practices through comprehensive
-                  training programs.
+                  To provide accurate, reliable, and professional surveying services that meet and exceed our clients' expectations, while maintaining the highest standards of integrity and technical excellence. We are committed to continuous learning and development, ensuring our team stays at the forefront of surveying technology and best practices through comprehensive training programs.
                 </p>
               </div>
             </motion.div>
@@ -298,12 +339,7 @@ const About = () => {
                   Our Vision
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To be the leading surveying and consulting firm in Nigeria,
-                  known for our technical expertise, innovation, and commitment
-                  to client satisfaction. We aim to contribute to the
-                  sustainable development of Nigeria through accurate land
-                  information services and pioneering surveying solutions that
-                  set new industry standards.
+                  To be the leading surveying and consulting firm in Nigeria, known for our technical expertise, innovation, and commitment to client satisfaction. We aim to contribute to the sustainable development of Nigeria through accurate land information services and pioneering surveying solutions. Additionally, we are dedicated to nurturing and training the next generation of surveyors, equipping them with the skills and knowledge needed to maintain and advance the standards of our profession.
                 </p>
               </div>
             </motion.div>
@@ -323,7 +359,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {siteWorks.map((work, index) => (
               <motion.div
                 key={index}
@@ -331,23 +367,28 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group relative overflow-hidden rounded-xl shadow-lg"
+                className={`group relative overflow-hidden rounded-xl shadow-lg ${
+                  work.size === 'large' ? 'md:col-span-2 lg:col-span-2' : 
+                  work.size === 'medium' ? 'md:col-span-1 lg:col-span-1' : 
+                  'md:col-span-1 lg:col-span-1'
+                }`}
               >
-                <img
-                  src={work.imageUrl}
-                  alt={work.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">
-                      {work.title}
-                    </h3>
-                    <p className="text-white/90 text-sm">{work.description}</p>
-                  </div>
+              <img
+                src={work.imageUrl}
+                alt={work.title}
+                className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                  work.orientation === 'portrait' ? 'h-[400px]' : 'h-56 md:h-64'
+                }`}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-lg font-bold text-white mb-1">
+                    {work.title}
+                  </h3>
+                  <p className="text-white/90 text-xs">{work.description}</p>
                 </div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -365,7 +406,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {team.map((member, index) => (
               <motion.div
                 key={index}
@@ -375,7 +416,7 @@ const About = () => {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
-                <div className="relative h-64">
+                <div className="relative h-72">
                   <img
                     src={member.imageUrl}
                     alt={member.name}
@@ -389,7 +430,7 @@ const About = () => {
                   <div className="text-blue-600 font-medium mb-3">
                     {member.role}
                   </div>
-                  <p className="text-gray-600">{member.description}</p>
+                  <p className="text-gray-600 text-sm">{member.description}</p>
                 </div>
               </motion.div>
             ))}
