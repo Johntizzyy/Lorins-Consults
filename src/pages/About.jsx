@@ -373,22 +373,23 @@ const About = () => {
                   'md:col-span-1 lg:col-span-1'
                 }`}
               >
-              <img
-                src={work.imageUrl}
-                alt={work.title}
-                className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
-                  work.orientation === 'portrait' ? 'h-[400px]' : 'h-56 md:h-64'
-                }`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-lg font-bold text-white mb-1">
-                    {work.title}
-                  </h3>
-                  <p className="text-white/90 text-xs">{work.description}</p>
+                <img
+                  src={work.imageUrl}
+                  alt={work.title}
+                  className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                    work.orientation === 'portrait' ? 'h-[400px]' : 'h-56 md:h-64'
+                  }`}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      {work.title}
+                    </h3>
+                    <p className="text-white/90 text-xs">{work.description}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
