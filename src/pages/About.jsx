@@ -22,8 +22,6 @@ const About = () => {
           />
         </svg>
       ),
-      imageUrl:
-        "https://images.unsplash.com/photo-1484626753559-5fa3ea273ae4?q=80&w=876&auto=format&fit=crop",
     },
     {
       title: "Integrity",
@@ -44,8 +42,6 @@ const About = () => {
           />
         </svg>
       ),
-      imageUrl:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=869&auto=format&fit=crop",
     },
     {
       title: "Excellence",
@@ -66,8 +62,6 @@ const About = () => {
           />
         </svg>
       ),
-      imageUrl:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=870&auto=format&fit=crop",
     },
   ];
 
@@ -76,7 +70,7 @@ const About = () => {
       name: "John Smith",
       role: "Lead Surveyor",
       description:
-        "Over 15 years of experience in land surveying and project management. John specializes in cadastral surveying and has worked on major residential and commercial developments across Nigeria.",
+        "Over 15 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
       imageUrl:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=870&auto=format&fit=crop",
     },
@@ -84,7 +78,7 @@ const About = () => {
       name: "Sarah Johnson",
       role: "GIS Specialist",
       description:
-        "Expert in Geographic Information Systems and spatial data analysis. Sarah has a Master's degree in Geospatial Technology and helps clients visualize and interpret complex land data.",
+        "Expert in Geographic Information Systems and spatial data analysis. Master's degree in Geospatial Technology.",
       imageUrl:
         "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=774&auto=format&fit=crop",
     },
@@ -92,46 +86,66 @@ const About = () => {
       name: "Michael Brown",
       role: "Engineering Surveyor",
       description:
-        "Specialized in construction and infrastructure surveying. Michael has contributed to numerous large-scale civil engineering projects and brings invaluable technical expertise to our team.",
+        "Specialized in construction and infrastructure surveying. Extensive experience in large-scale civil engineering projects.",
       imageUrl:
         "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=774&auto=format&fit=crop",
     },
+    {
+      name: "Emily Davis",
+      role: "Project Manager",
+      description:
+        "Expert in project coordination and client relations. Ensures smooth execution of all surveying projects.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop",
+    },
+    {
+      name: "David Wilson",
+      role: "Topographic Specialist",
+      description:
+        "Specialized in detailed terrain mapping and elevation surveys. Advanced expertise in 3D modeling.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=774&auto=format&fit=crop",
+    },
+    {
+      name: "Lisa Anderson",
+      role: "Quality Control Manager",
+      description:
+        "Ensures all surveying work meets the highest standards of accuracy and compliance with industry regulations.",
+      imageUrl:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=774&auto=format&fit=crop",
+    },
   ];
 
-  const milestones = [
+  const siteWorks = [
     {
-      year: "2008",
-      title: "Company Founded",
-      description:
-        "Lorins Consults was established with a mission to provide accurate, reliable surveying services.",
+      title: "Lagos Waterfront Project",
+      description: "Boundary survey for a major waterfront development",
+      imageUrl:
+        "https://images.unsplash.com/photo-1618411340482-9b09509bc193?q=80&w=776&auto=format&fit=crop",
     },
     {
-      year: "2012",
-      title: "Expanded Services",
-      description:
-        "Added GIS mapping and 3D modeling capabilities to our service offerings.",
+      title: "Abuja Residential Estate",
+      description: "Topographic survey for a 50-acre residential development",
+      imageUrl:
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=870&auto=format&fit=crop",
     },
     {
-      year: "2015",
-      title: "National Recognition",
-      description: "Received the National Award for Excellence in Surveying.",
+      title: "Port Harcourt Industrial Park",
+      description: "Engineering survey for infrastructure development",
+      imageUrl:
+        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=872&auto=format&fit=crop",
     },
     {
-      year: "2018",
-      title: "International Certification",
-      description: "Obtained ISO certification for quality management systems.",
-    },
-    {
-      year: "2022",
-      title: "Digital Transformation",
-      description:
-        "Implemented advanced digital surveying technologies and cloud-based solutions.",
+      title: "Kano Urban Development",
+      description: "Cadastral survey for urban planning project",
+      imageUrl:
+        "https://images.unsplash.com/photo-1477936821694-ec4233a9a1a0?q=80&w=874&auto=format&fit=crop",
     },
   ];
 
   return (
     <div>
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
@@ -156,13 +170,13 @@ const About = () => {
             </h1>
             <p className="text-xl md:text-2xl text-white/90 font-light mb-8 leading-relaxed">
               Nigeria's premier land surveying and consulting firm dedicated to
-              precision, integrity, and excellence since 2008.
+              precision, integrity, and excellence since 2021.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Company Introduction with Image */}
+      {/* Company Introduction */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -176,31 +190,30 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Founded in 2008, Lorins Consults has grown from a small local
-                surveying practice to one of Nigeria's most respected consulting
-                firms. With a team of expert surveyors, cutting-edge technology,
-                and a commitment to excellence, we've established ourselves as
-                industry leaders.
+                Founded in 2021, Lorins Consults has quickly established itself
+                as a leading surveying firm in Nigeria. In just three years,
+                we've built a reputation for excellence, precision, and
+                reliability in land surveying services.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our journey has been marked by continuous improvement, embracing
-                new technologies, and building lasting relationships with our
-                clients. Today, we serve a diverse portfolio of clients ranging
-                from individual landowners to government agencies and large
-                corporations.
+                Our rapid growth is a testament to our commitment to quality and
+                our ability to deliver exceptional results for our clients.
+                We've successfully completed numerous projects across various
+                sectors, from residential developments to large-scale
+                infrastructure projects.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">15+</div>
-                  <div className="text-gray-600">Years of Experience</div>
+                  <div className="text-4xl font-bold text-blue-600">3+</div>
+                  <div className="text-gray-600">Years of Excellence</div>
                 </div>
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">1000+</div>
+                  <div className="text-4xl font-bold text-blue-600">200+</div>
                   <div className="text-gray-600">Projects Completed</div>
                 </div>
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">30+</div>
-                  <div className="text-gray-600">Expert Staff</div>
+                  <div className="text-4xl font-bold text-blue-600">6</div>
+                  <div className="text-gray-600">Expert Team Members</div>
                 </div>
               </div>
             </motion.div>
@@ -217,22 +230,12 @@ const About = () => {
                 alt="Surveying team at work"
                 className="w-full h-[500px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent py-10 px-6">
-                <div className="text-white">
-                  <div className="font-medium text-blue-400">
-                    Our Commitment
-                  </div>
-                  <div className="text-xl font-bold">
-                    Precision in Every Measurement
-                  </div>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision with cards */}
+      {/* Mission & Vision Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -268,8 +271,10 @@ const About = () => {
                   To provide accurate, reliable, and professional surveying
                   services that meet and exceed our clients' expectations, while
                   maintaining the highest standards of integrity and technical
-                  excellence. We strive to be a trusted partner in our clients'
-                  success by delivering timely and cost-effective solutions.
+                  excellence. We are committed to continuous learning and
+                  development, ensuring our team stays at the forefront of
+                  surveying technology and best practices through comprehensive
+                  training programs.
                 </p>
               </div>
             </motion.div>
@@ -297,7 +302,8 @@ const About = () => {
                   known for our technical expertise, innovation, and commitment
                   to client satisfaction. We aim to contribute to the
                   sustainable development of Nigeria through accurate land
-                  information services and pioneering surveying solutions.
+                  information services and pioneering surveying solutions that
+                  set new industry standards.
                 </p>
               </div>
             </motion.div>
@@ -305,93 +311,40 @@ const About = () => {
         </div>
       </section>
 
-      {/* Company Timeline */}
-      <section className="py-20 bg-white">
+      {/* Site Works Gallery */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              Our Journey
+              Our Work in Action
             </h2>
             <p className="text-lg text-gray-700">
-              Milestones that have shaped our growth and success over the years.
+              A glimpse into our surveying projects across Nigeria
             </p>
           </div>
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
-
-            {/* Timeline Items */}
-            <div className="relative">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={milestone.year}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`mb-16 flex ${
-                    index % 2 === 0 ? "justify-start" : "justify-end"
-                  } relative`}
-                >
-                  <div className="w-5/12">
-                    <div className="bg-white rounded-xl shadow-lg p-6">
-                      <div className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-bold mb-4">
-                        {milestone.year}
-                      </div>
-                      <h3 className="text-xl font-bold mb-2">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-gray-600">{milestone.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Timeline Point */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-blue-600 rounded-full border-4 border-white shadow"></div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Values Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              Our Core Values
-            </h2>
-            <p className="text-lg text-gray-700">
-              The principles that guide our work and define our company culture.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-            {values.map((value, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {siteWorks.map((work, index) => (
               <motion.div
-                key={value.title}
+                key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg"
+                className="group relative overflow-hidden rounded-xl shadow-lg"
               >
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={value.imageUrl}
-                    alt={value.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="mb-5">{value.icon}</div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                    {value.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {value.description}
-                  </p>
+                <img
+                  src={work.imageUrl}
+                  alt={work.title}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {work.title}
+                    </h3>
+                    <p className="text-white/90 text-sm">{work.description}</p>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -400,99 +353,79 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
               Meet Our Team
             </h2>
             <p className="text-lg text-gray-700">
-              Our team of experienced professionals is dedicated to providing
-              exceptional service and technical expertise.
+              Our team of experienced professionals is dedicated to delivering
+              exceptional surveying services
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {team.map((member, index) => (
               <motion.div
-                key={member.name}
+                key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg group"
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
-                <div className="h-80 overflow-hidden">
+                <div className="relative h-64">
                   <img
                     src={member.imageUrl}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-500"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-1 text-gray-900">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-medium mb-4">
+                  <div className="text-blue-600 font-medium mb-3">
                     {member.role}
-                  </p>
-                  <p className="text-gray-600 leading-relaxed">
-                    {member.description}
-                  </p>
+                  </div>
+                  <p className="text-gray-600">{member.description}</p>
                 </div>
               </motion.div>
             ))}
           </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              to="/contact"
-              className="btn btn-primary inline-flex items-center text-lg px-8 py-4"
-            >
-              Join Our Team
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white">
+      {/* Values Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Work With Us?
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
+              Our Core Values
             </h2>
-            <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-              Contact us today to discuss your surveying needs and how our team
-              can help with your project.
+            <p className="text-lg text-gray-700">
+              The principles that guide our work and define our company culture
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="btn bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4"
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {values.map((value, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-xl shadow-lg text-center"
               >
-                Contact Us
-              </Link>
-              <Link
-                to="/services"
-                className="btn bg-blue-700 text-white hover:bg-blue-800 text-lg px-8 py-4"
-              >
-                Explore Services
-              </Link>
-            </div>
+                <div className="flex justify-center mb-6">{value.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {value.title}
+                </h3>
+                <p className="text-gray-600">{value.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

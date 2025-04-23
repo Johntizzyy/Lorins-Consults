@@ -92,7 +92,7 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "John Doe",
+      name: "Adepoju John",
       role: "Property Developer",
       content:
         "Lorins Consults provided exceptional surveying services for our residential project. Their attention to detail and professional approach made all the difference.",
@@ -100,7 +100,7 @@ const Home = () => {
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=774&auto=format&fit=crop",
     },
     {
-      name: "Jane Smith",
+      name: "Oladapo Jane",
       role: "Architect",
       content:
         "Working with Lorins Consults has been a pleasure. Their expertise in topographic surveying helped us make informed decisions for our design.",
@@ -498,7 +498,7 @@ const Home = () => {
       {/* Map Section with contact info overlay */}
       <section className="relative h-[600px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.6666666666667!2d3.3792057!3d6.5243793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzEnMzEuNyJOIDPCsDIyJzQ1LjEiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d406.32388307954875!2d3.9439046389859045!3d7.409887232286912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1745088723730!5m2!1sen!2sng"
           width="100%"
           height="100%"
           style={{ border: 0 }}
