@@ -236,9 +236,10 @@ const Contact = () => {
                         Address
                       </h3>
                       <p className="text-gray-600 mt-1">
-                        123 Adeola Odeku Street, Victoria Island
+                        Imafam Shopping Complex, Iwo-Road, Ojoo Express Way
+                        Beside Poplat Station , Cele B./Stop Iwo Road Ibadan
                         <br />
-                        Lagos, Nigeria
+                        Oyo State, Nigeria
                       </p>
                     </div>
                   </div>
@@ -263,7 +264,9 @@ const Contact = () => {
                       <h3 className="text-lg font-semibold text-gray-900">
                         Phone
                       </h3>
-                      <p className="text-gray-600 mt-1">+234 123 456 7890</p>
+                      <p className="text-gray-600 mt-1">
+                        +234 703 790 5846 , +234 812 140 7681
+                      </p>
                     </div>
                   </div>
 
@@ -288,7 +291,7 @@ const Contact = () => {
                         Email
                       </h3>
                       <p className="text-gray-600 mt-1">
-                        info@lorinsconsults.com
+                        lorinsconsults@gmail.com
                       </p>
                     </div>
                   </div>
@@ -335,8 +338,7 @@ const Contact = () => {
               ></iframe> */}
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d278.0568660122809!2d3.943875911161144!3d7.409994075506571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1745088283844!5m2!1sen!2sng"
-
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d278.0568660122809!2d3.943875911161144!3d7.409994075506571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1745088283844!5m2!1sen!2sng"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}

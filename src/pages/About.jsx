@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import img4450 from "../assets/1 (1).jpg";
+import img4451 from "../assets/1 (1).jpg";
+import img4453 from "../assets/1 (1).jpg";
+import img4458 from "../assets/1 (1).jpg";
+import img4459 from "../assets/1 (1).jpg";
+import img4460 from "../assets/1 (1).jpg";
+import img4461 from "../assets/1 (1).jpg";
 
 const About = () => {
   const values = [
@@ -14,6 +21,7 @@ const About = () => {
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
+          2
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -64,55 +72,48 @@ const About = () => {
       ),
     },
   ];
-
   const team = [
     {
       name: "John Smith",
       role: "Lead Surveyor",
       description:
         "Over 15 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4450,
     },
     {
       name: "Sarah Johnson",
       role: "GIS Specialist",
       description:
         "Expert in Geographic Information Systems and spatial data analysis. Master's degree in Geospatial Technology.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=774&auto=format&fit=crop",
+      imageUrl: img4451,
     },
     {
       name: "Michael Brown",
       role: "Engineering Surveyor",
       description:
         "Specialized in construction and infrastructure surveying. Extensive experience in large-scale civil engineering projects.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=774&auto=format&fit=crop",
+      imageUrl: img4453,
     },
     {
       name: "Emily Davis",
       role: "Project Manager",
       description:
         "Expert in project coordination and client relations. Ensures smooth execution of all surveying projects.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4458,
     },
     {
       name: "David Wilson",
       role: "Topographic Specialist",
       description:
         "Specialized in detailed terrain mapping and elevation surveys. Advanced expertise in 3D modeling.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=774&auto=format&fit=crop",
+      imageUrl: img4459,
     },
     {
       name: "Lisa Anderson",
       role: "Quality Control Manager",
       description:
         "Ensures all surveying work meets the highest standards of accuracy and compliance with industry regulations.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=774&auto=format&fit=crop",
+      imageUrl: img4460,
     },
   ];
 
@@ -120,72 +121,63 @@ const About = () => {
     {
       title: "Lagos Waterfront Project",
       description: "Boundary survey for a major waterfront development",
-      imageUrl:
-        "https://images.unsplash.com/photo-1618411340482-9b09509bc193?q=80&w=776&auto=format&fit=crop",
+      imageUrl: img4450,
       size: "large",
       orientation: "landscape",
     },
     {
       title: "Abuja Residential Estate",
       description: "Topographic survey for a 50-acre residential development",
-      imageUrl:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4451,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Port Harcourt Industrial Park",
       description: "Engineering survey for infrastructure development",
-      imageUrl:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=872&auto=format&fit=crop",
+      imageUrl: img4453,
       size: "small",
       orientation: "landscape",
     },
     {
       title: "Kano Urban Development",
       description: "Cadastral survey for urban planning project",
-      imageUrl:
-        "https://images.unsplash.com/photo-1477936821694-ec4233a9a1a0?q=80&w=874&auto=format&fit=crop",
+      imageUrl: img4458,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Lekki Free Trade Zone",
       description: "Infrastructure planning and development survey",
-      imageUrl:
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4459,
       size: "small",
       orientation: "landscape",
     },
     {
       title: "Eko Atlantic City",
       description: "Coastal development and reclamation survey",
-      imageUrl:
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4460,
       size: "large",
       orientation: "landscape",
     },
     {
       title: "Victoria Island Expansion",
       description: "Urban development and infrastructure survey",
-      imageUrl:
-        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4461,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Ikeja Business District",
       description: "Commercial property development survey",
-      imageUrl:
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4450,
       size: "small",
       orientation: "landscape",
     },
     {
       title: "Lagos Island Redevelopment",
       description: "Historic district preservation and modernization survey",
-      imageUrl:
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=870&auto=format&fit=crop",
+      imageUrl: img4451,
       size: "medium",
       orientation: "portrait",
     },
@@ -198,8 +190,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1512187849-463fdb898f21?q=80&w=1932&auto=format&fit=crop')",
+            backgroundImage: `url(${img4450})`,
             backgroundAttachment: "fixed",
           }}
         >
@@ -291,7 +282,8 @@ const About = () => {
               Mission & Vision
             </h2>
             <p className="text-lg text-gray-700">
-              Our guiding principles that shape every project we undertake and every client relationship we build.
+              Our guiding principles that shape every project we undertake and
+              every client relationship we build.
             </p>
           </div>
 
@@ -315,7 +307,13 @@ const About = () => {
                   Our Mission
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To provide accurate, reliable, and professional surveying services that meet and exceed our clients' expectations, while maintaining the highest standards of integrity and technical excellence. We are committed to continuous learning and development, ensuring our team stays at the forefront of surveying technology and best practices through comprehensive training programs.
+                  To provide accurate, reliable, and professional surveying
+                  services that meet and exceed our clients' expectations, while
+                  maintaining the highest standards of integrity and technical
+                  excellence. We are committed to continuous learning and
+                  development, ensuring our team stays at the forefront of
+                  surveying technology and best practices through comprehensive
+                  training programs.
                 </p>
               </div>
             </motion.div>
@@ -339,7 +337,15 @@ const About = () => {
                   Our Vision
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To be the leading surveying and consulting firm in Nigeria, known for our technical expertise, innovation, and commitment to client satisfaction. We aim to contribute to the sustainable development of Nigeria through accurate land information services and pioneering surveying solutions. Additionally, we are dedicated to nurturing and training the next generation of surveyors, equipping them with the skills and knowledge needed to maintain and advance the standards of our profession.
+                  To be the leading surveying and consulting firm in Nigeria,
+                  known for our technical expertise, innovation, and commitment
+                  to client satisfaction. We aim to contribute to the
+                  sustainable development of Nigeria through accurate land
+                  information services and pioneering surveying solutions.
+                  Additionally, we are dedicated to nurturing and training the
+                  next generation of surveyors, equipping them with the skills
+                  and knowledge needed to maintain and advance the standards of
+                  our profession.
                 </p>
               </div>
             </motion.div>
@@ -368,16 +374,20 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className={`group relative overflow-hidden rounded-xl shadow-lg ${
-                  work.size === 'large' ? 'md:col-span-2 lg:col-span-2' : 
-                  work.size === 'medium' ? 'md:col-span-1 lg:col-span-1' : 
-                  'md:col-span-1 lg:col-span-1'
+                  work.size === "large"
+                    ? "md:col-span-2 lg:col-span-2"
+                    : work.size === "medium"
+                    ? "md:col-span-1 lg:col-span-1"
+                    : "md:col-span-1 lg:col-span-1"
                 }`}
               >
                 <img
                   src={work.imageUrl}
                   alt={work.title}
                   className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
-                    work.orientation === 'portrait' ? 'h-[400px]' : 'h-56 md:h-64'
+                    work.orientation === "portrait"
+                      ? "h-[400px]"
+                      : "h-56 md:h-64"
                   }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
