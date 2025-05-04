@@ -120,63 +120,54 @@ const About = () => {
   const siteWorks = [
     {
       title: "Lagos Waterfront Project",
-      description: "Boundary survey for a major waterfront development",
       imageUrl: img4450,
       size: "large",
-      orientation: "landscape",
+      orientation: "portrait",
     },
     {
       title: "Abuja Residential Estate",
-      description: "Topographic survey for a 50-acre residential development",
       imageUrl: img4451,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Port Harcourt Industrial Park",
-      description: "Engineering survey for infrastructure development",
       imageUrl: img4453,
       size: "small",
-      orientation: "landscape",
+      orientation: "portrait",
     },
     {
       title: "Kano Urban Development",
-      description: "Cadastral survey for urban planning project",
       imageUrl: img4458,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Lekki Free Trade Zone",
-      description: "Infrastructure planning and development survey",
       imageUrl: img4459,
       size: "small",
-      orientation: "landscape",
+      orientation: "portrait",
     },
     {
       title: "Eko Atlantic City",
-      description: "Coastal development and reclamation survey",
       imageUrl: img4460,
       size: "large",
-      orientation: "landscape",
+      orientation: "portrait",
     },
     {
       title: "Victoria Island Expansion",
-      description: "Urban development and infrastructure survey",
       imageUrl: img4461,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Ikeja Business District",
-      description: "Commercial property development survey",
       imageUrl: img4450,
       size: "small",
-      orientation: "landscape",
+      orientation: "portrait",
     },
     {
       title: "Lagos Island Redevelopment",
-      description: "Historic district preservation and modernization survey",
       imageUrl: img4451,
       size: "medium",
       orientation: "portrait",
@@ -386,18 +377,10 @@ const About = () => {
                   alt={work.title}
                   className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
                     work.orientation === "portrait"
-                      ? "h-[400px]"
-                      : "h-56 md:h-64"
+                      ? "h-[500px]"
+                      : "h-72 md:h-80"
                   }`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      {work.title}
-                    </h3>
-                    <p className="text-white/90 text-xs">{work.description}</p>
-                  </div>
-                </div>
               </motion.div>
             ))}
           </div>
