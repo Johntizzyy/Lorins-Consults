@@ -160,18 +160,6 @@ const About = () => {
       size: "medium",
       orientation: "portrait",
     },
-    {
-      title: "Ikeja Business District",
-      imageUrl: img4450,
-      size: "small",
-      orientation: "portrait",
-    },
-    {
-      title: "Lagos Island Redevelopment",
-      imageUrl: img4451,
-      size: "medium",
-      orientation: "portrait",
-    },
   ];
 
   return (
