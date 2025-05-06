@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import img4450 from "../assets/1 (1).jpg";
-import img4451 from "../assets/1 (1).jpg";
-import img4453 from "../assets/1 (1).jpg";
-import img4458 from "../assets/1 (1).jpg";
-import img4459 from "../assets/1 (1).jpg";
-import img4460 from "../assets/1 (1).jpg";
-import img4461 from "../assets/1 (1).jpg";
+// import a from "../assets/a.JPG"
+import siteImageOne from "../assets/training.jpg";
+import siteImageTwo from "../assets/site-image-1.jpg";
+import siteImageThree from "../assets/site-img-3.jpg";
+import siteImageFour from "../assets/site-img-4.jpg";
+import siteImageFive from "../assets/site-img-2.jpg";
+import siteImageSix from "../assets/lc-img-2.jpg";
+import siteImageSeven from "../assets/lc-img-3.jpg";
 
 const About = () => {
   const values = [
@@ -78,85 +79,85 @@ const About = () => {
       role: "Lead Surveyor",
       description:
         "Over 15 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
-      imageUrl: img4450,
+      imageUrl: siteImageSeven,
     },
     {
       name: "Sarah Johnson",
       role: "GIS Specialist",
       description:
         "Expert in Geographic Information Systems and spatial data analysis. Master's degree in Geospatial Technology.",
-      imageUrl: img4451,
+      imageUrl: siteImageSeven,
     },
     {
       name: "Michael Brown",
       role: "Engineering Surveyor",
       description:
         "Specialized in construction and infrastructure surveying. Extensive experience in large-scale civil engineering projects.",
-      imageUrl: img4453,
+      imageUrl: siteImageSeven,
     },
     {
       name: "Emily Davis",
       role: "Project Manager",
       description:
         "Expert in project coordination and client relations. Ensures smooth execution of all surveying projects.",
-      imageUrl: img4458,
+      imageUrl: siteImageSeven,
     },
     {
       name: "David Wilson",
       role: "Topographic Specialist",
       description:
         "Specialized in detailed terrain mapping and elevation surveys. Advanced expertise in 3D modeling.",
-      imageUrl: img4459,
+      imageUrl: siteImageSeven,
     },
     {
       name: "Lisa Anderson",
       role: "Quality Control Manager",
       description:
         "Ensures all surveying work meets the highest standards of accuracy and compliance with industry regulations.",
-      imageUrl: img4460,
+      imageUrl: siteImageSeven,
     },
   ];
 
   const siteWorks = [
     {
       title: "Lagos Waterfront Project",
-      imageUrl: img4450,
+      imageUrl: siteImageOne,
       size: "large",
       orientation: "portrait",
     },
     {
       title: "Abuja Residential Estate",
-      imageUrl: img4451,
+      imageUrl: siteImageTwo,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Port Harcourt Industrial Park",
-      imageUrl: img4453,
+      imageUrl: siteImageThree,
       size: "small",
       orientation: "portrait",
     },
     {
       title: "Kano Urban Development",
-      imageUrl: img4458,
+      imageUrl: siteImageFour,
       size: "medium",
       orientation: "portrait",
     },
     {
       title: "Lekki Free Trade Zone",
-      imageUrl: img4459,
+      imageUrl: siteImageFive,
       size: "small",
       orientation: "portrait",
     },
     {
       title: "Eko Atlantic City",
-      imageUrl: img4460,
+      imageUrl: siteImageSix,
       size: "large",
       orientation: "portrait",
     },
     {
       title: "Victoria Island Expansion",
-      imageUrl: img4461,
+      imageUrl: siteImageSeven,
       size: "medium",
       orientation: "portrait",
     },
@@ -169,7 +170,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
-            backgroundImage: `url(${img4450})`,
+            backgroundImage: `url(${siteImageSeven})`,
             backgroundAttachment: "fixed",
           }}
         >
@@ -243,8 +244,9 @@ const About = () => {
               viewport={{ once: true }}
               className="relative rounded-2xl overflow-hidden shadow-xl"
             >
+              {/* ----------CHANGE TO OGA'S PICTURE ----------------- */}
               <img
-                src="https://images.unsplash.com/photo-1664574654578-d5a6a4f447bb?q=80&w=870&auto=format&fit=crop"
+                src={siteImageThree}
                 alt="Surveying team at work"
                 className="w-full h-[500px] object-cover"
               />
