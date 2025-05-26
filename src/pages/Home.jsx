@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import topographyImg from "../assets/topography.jpg" 
 
 const Home = () => {
   const services = [
@@ -44,8 +45,7 @@ const Home = () => {
           />
         </svg>
       ),
-      imageUrl:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=872&auto=format&fit=crop",
+      imageUrl: topographyImg
     },
     {
       title: "Engineering Survey",
@@ -67,7 +67,7 @@ const Home = () => {
         </svg>
       ),
       imageUrl:
-        "https://images.unsplash.com/photo-1477936821694-ec4233a9a1a0?q=80&w=874&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=870&auto=format&fit=crop",
     },
   ];
 
@@ -179,13 +179,13 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                Nigeria's Premier{" "}
-                <span className="text-gradient">Land Surveying</span>{" "}
-                Consultancy
+                Revolutionizing {" "}
+                <span className="text-gradient">the Surveying</span>{" "}
+                Landcaping in Nigeria
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Delivering precision surveying with cutting-edge technology. Our
-                certified surveyors provide reliable data you can trust.
+                certified surveyors provide reliable data you can trust. Contributing to the development of the next generation professionals
               </p>
               <Link
                 to="/about"
@@ -216,12 +216,12 @@ const Home = () => {
               className="grid grid-cols-2 gap-8"
             >
               <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">3+</div>
                 <div className="text-gray-600">Years of Experience</div>
               </div>
               <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
                 <div className="text-4xl font-bold text-blue-600 mb-2">
-                  500+
+                  200+
                 </div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>

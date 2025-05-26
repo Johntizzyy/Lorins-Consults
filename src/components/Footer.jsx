@@ -57,7 +57,8 @@ const Footer = () => {
             </p>
             <div className="flex space-x-5">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1APYGkEUCC/?mibextid=wwXIfr"
+                target="_blank"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 aria-label="Facebook"
               >
@@ -83,7 +84,8 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lorins_consult?igsh=Ymh6OWx4bmU3ZWt5&utm_source=qr"
+                target="_blank"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 aria-label="Instagram"
               >

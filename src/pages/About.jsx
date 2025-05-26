@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import siteImageOne from "../assets/training.jpg";
 import siteImageTwo from "../assets/site-image-1.jpg";
 import siteImageThree from "../assets/site-img-3.jpg";
+import lordmayor from "../assets/lordmayor.jpeg";
+import Oluwatobiloba from "../assets/Oluwatobiloba.png"
+import Omowumi from "../assets/Omowumi.png"
 import siteImageFour from "../assets/site-img-4.jpg";
 import siteImageFive from "../assets/site-img-2.jpg";
 import siteImageSix from "../assets/lc-img-2.jpg";
@@ -75,47 +78,25 @@ const About = () => {
   ];
   const team = [
     {
-      name: "John Smith",
+      name: "Surveyor Amire Mayowa",
       role: "Lead Surveyor",
       description:
         "Over 15 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
-      imageUrl: siteImageSeven,
+      imageUrl: lordmayor,
     },
     {
-      name: "Sarah Johnson",
-      role: "GIS Specialist",
-      description:
-        "Expert in Geographic Information Systems and spatial data analysis. Master's degree in Geospatial Technology.",
-      imageUrl: siteImageSeven,
+      name: "Adeniyi Oluwatobiloba O.",
+      role: "Assitant Surveyor",
+      description: "Experience in land surveying and project management. Specializes in cadastral surveying, Topography survey, Route survey and major development",
+      imageUrl: Oluwatobiloba,
     },
     {
-      name: "Michael Brown",
-      role: "Engineering Surveyor",
-      description:
-        "Specialized in construction and infrastructure surveying. Extensive experience in large-scale civil engineering projects.",
-      imageUrl: siteImageSeven,
-    },
-    {
-      name: "Emily Davis",
+      name: "Lamidi Omowunmi",
       role: "Project Manager",
       description:
         "Expert in project coordination and client relations. Ensures smooth execution of all surveying projects.",
-      imageUrl: siteImageSeven,
-    },
-    {
-      name: "David Wilson",
-      role: "Topographic Specialist",
-      description:
-        "Specialized in detailed terrain mapping and elevation surveys. Advanced expertise in 3D modeling.",
-      imageUrl: siteImageSeven,
-    },
-    {
-      name: "Lisa Anderson",
-      role: "Quality Control Manager",
-      description:
-        "Ensures all surveying work meets the highest standards of accuracy and compliance with industry regulations.",
-      imageUrl: siteImageSeven,
-    },
+      imageUrl: Omowumi,
+    }
   ];
 
   const siteWorks = [
@@ -209,17 +190,19 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Founded in 2021, Lorins Consults has quickly established itself
-                as a leading surveying firm in Nigeria. In just three years,
-                we've built a reputation for excellence, precision, and
-                reliability in land surveying services.
+                Lorins Consult began as a humble vision with just four
+                passionate team members. Though officially launched in October
+                2021, the groundwork had been quietly laid long before. From a
+                small workspace in the heart of Ibadan, our journey took
+                root—driven by a commitment to excellence, integrity, and
+                innovation.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our rapid growth is a testament to our commitment to quality and
-                our ability to deliver exceptional results for our clients.
-                We've successfully completed numerous projects across various
-                sectors, from residential developments to large-scale
-                infrastructure projects.
+                In just three years, Lorins Consult has grown to a dedicated
+                team of nearly ten professionals and has evolved into a
+                nationally recognized brand. Our rise has been steady, marked by
+                consistent growth and a growing reputation as a firm to reckon
+                with in Nigeria's consulting landscape.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
@@ -231,7 +214,7 @@ const About = () => {
                   <div className="text-gray-600">Projects Completed</div>
                 </div>
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">6</div>
+                  <div className="text-4xl font-bold text-blue-600">10+</div>
                   <div className="text-gray-600">Expert Team Members</div>
                 </div>
               </div>
@@ -242,13 +225,12 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative rounded-2xl overflow-hidden shadow-xl"
+              className="relative rounded-Z2xl overflow-hidden shadow-xl"
             >
-              {/* ----------CHANGE TO OGA'S PICTURE ----------------- */}
               <img
-                src={siteImageThree}
+                src={lordmayor}
                 alt="Surveying team at work"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[500px] object-contain"
               />
             </motion.div>
           </div>
@@ -288,13 +270,9 @@ const About = () => {
                   Our Mission
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To provide accurate, reliable, and professional surveying
-                  services that meet and exceed our clients' expectations, while
-                  maintaining the highest standards of integrity and technical
-                  excellence. We are committed to continuous learning and
-                  development, ensuring our team stays at the forefront of
-                  surveying technology and best practices through comprehensive
-                  training programs.
+                  To deliver surveying solutions with integrity,
+                  professionalism, and a unique touch—shaping the industry and
+                  inspiring the next generation of surveyors.{" "}
                 </p>
               </div>
             </motion.div>
@@ -318,15 +296,9 @@ const About = () => {
                   Our Vision
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To be the leading surveying and consulting firm in Nigeria,
-                  known for our technical expertise, innovation, and commitment
-                  to client satisfaction. We aim to contribute to the
-                  sustainable development of Nigeria through accurate land
-                  information services and pioneering surveying solutions.
-                  Additionally, we are dedicated to nurturing and training the
-                  next generation of surveyors, equipping them with the skills
-                  and knowledge needed to maintain and advance the standards of
-                  our profession.
+                  To lead the future of surveying and land management through
+                  precision, integrity, and innovation—empowering the profession
+                  and shaping the next generation of surveyors.
                 </p>
               </div>
             </motion.div>

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../assets/blue-logo.png"
+import logoo from "../assets/lcologo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,8 +48,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <svg
+          <img src={scrolled ? logoo : logo} alt="lc-logo" style={{"height":"50px"}}/>
+
+          <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+          {/* <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"> */}
+          {/* <img src={logo} alt="lc-logo" /> */}
+              {/*<svg
                 className="w-7 h-7 text-white"
                 fill="none"
                 stroke="currentColor"
@@ -59,14 +65,14 @@ const Navbar = () => {
                   strokeWidth={2}
                   d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
                 />
-              </svg>
-            </div>
+              </svg>*/}
+            </div> 
             <span
               className={`text-2xl font-bold transition-colors duration-300 ${
                 scrolled ? "text-blue-600" : "text-white"
               }`}
             >
-              Lorins Consults
+              {/* Lorins Consults */}
             </span>
           </Link>
 
