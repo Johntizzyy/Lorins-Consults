@@ -92,21 +92,20 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Adepoju John",
+      name: "Pst Oriowo Olufemi",
+      content: "A trusted and reliable man for you rland related and surveying Jobs",
+      rating:5
+    },
+    {
+      name: "Mrs. Abiola Akinyemi",
       content:
-        "Lorins Consults provided exceptional surveying services for our residential project. Their attention to detail and professional approach made all the difference.",
+        "Lorins Consults exceeded my expectations. From the first consultation to the delivery of my survey plan, their team was professional, patient, and very thorough. I appreciated how they explained every detail and made sure I understood the entire process. I will definitely recommend them to anyone in need of reliable land surveying services.",
       rating: 5,
     },
     {
-      name: "Chinonso Eze",
+      name: "Mr. Tunde Ogunlana",
       content:
-        "",
-      rating: 5,
-    },
-    {
-      name: "Fatima Bello",
-      content:
-        "",
+        "I’m truly impressed by the quality of service I received from Lorins Consults. They were prompt, respectful, and used modern equipment to get accurate results. Their attention to detail gave me peace of mind during my land purchase. Thank you for a job well done!",
       rating: 5,
     },
   ];

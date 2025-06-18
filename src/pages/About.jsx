@@ -9,8 +9,9 @@ import Oluwatobiloba from "../assets/Oluwatobiloba.png";
 import Omowumi from "../assets/Omowumi.png";
 import siteImageFour from "../assets/site-img-4.jpg";
 import siteImageFive from "../assets/site-img-2.jpg";
-import siteImageSix from "../assets/lc-img-2.jpg";
-import siteImageSeven from "../assets/lc-img-3.jpg";
+import siteImageSix from "../assets/Oluwatoyin.jpg";
+import siteImageSeven from "../assets/John.jpg";
+import siteImageEight from "../assets/lc-img-3.jpg";
 
 const About = () => {
   const values = [
@@ -102,50 +103,43 @@ const About = () => {
 
   const siteWorks = [
     {
-      title: "Lagos Waterfront Project",
       imageUrl: siteImageOne,
       size: "large",
       orientation: "portrait",
     },
     {
-      title: "Abuja Residential Estate",
       imageUrl: siteImageTwo,
       size: "medium",
       orientation: "portrait",
     },
     {
-      title: "Port Harcourt Industrial Park",
       imageUrl: siteImageThree,
       size: "small",
       orientation: "portrait",
     },
     {
-      title: "Kano Urban Development",
       imageUrl: siteImageFour,
       size: "medium",
       orientation: "portrait",
     },
     {
-      title: "Lekki Free Trade Zone",
       imageUrl: siteImageFive,
       size: "small",
       orientation: "portrait",
     },
+
     {
-      title: "Ibadan City Survey",
-      imageUrl: siteImageTwo,
-      size: "small",
+      imageUrl: siteImageSix,
+      size: "medium",
       orientation: "portrait",
     },
     {
-      title: "Abeokuta Mapping",
-      imageUrl: siteImageThree,
-      size: "small",
-      orientation: "portrait",
-    },
-    {
-      title: "Victoria Island Expansion",
       imageUrl: siteImageSeven,
+      size: "medium",
+      orientation: "portrait",
+    },
+    {
+      imageUrl: siteImageEight,
       size: "medium",
       orientation: "portrait",
     },
