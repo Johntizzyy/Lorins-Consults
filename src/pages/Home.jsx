@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import topographyImg from "../assets/topography.jpg" 
+import topographyImg from "../assets/topography.jpg";
 
 const Home = () => {
   const services = [
@@ -45,7 +45,7 @@ const Home = () => {
           />
         </svg>
       ),
-      imageUrl: topographyImg
+      imageUrl: topographyImg,
     },
     {
       title: "Engineering Survey",
@@ -93,27 +93,21 @@ const Home = () => {
   const testimonials = [
     {
       name: "Adepoju John",
-      role: "Property Developer",
       content:
         "Lorins Consults provided exceptional surveying services for our residential project. Their attention to detail and professional approach made all the difference.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=774&auto=format&fit=crop",
+      rating: 5,
     },
     {
-      name: "Oladapo Jane",
-      role: "Architect",
+      name: "Chinonso Eze",
       content:
-        "Working with Lorins Consults has been a pleasure. Their expertise in topographic surveying helped us make informed decisions for our design.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=774&auto=format&fit=crop",
+        "",
+      rating: 5,
     },
     {
-      name: "Mike Johnson",
-      role: "Construction Manager",
+      name: "Fatima Bello",
       content:
-        "The team at Lorins Consults is highly skilled and reliable. They delivered accurate results within the agreed timeframe.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=774&auto=format&fit=crop",
+        "",
+      rating: 5,
     },
   ];
 
@@ -179,13 +173,15 @@ const Home = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                Revolutionizing {" "}
-                <span className="text-gradient">the Surveying</span>{" "}
-                Landcaping in Nigeria
+                Revolutionizing{" "}
+                <span className="text-gradient">the Surveying</span> Landcaping
+                in Nigeria
               </h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Delivering precision surveying with cutting-edge technology. Our
-                certified surveyors provide reliable data you can trust. Contributing to the development of the next generation professionals
+                certified surveyors provide reliable data you can trust.
+                Contributing to the development of the next generation
+                professionals
               </p>
               <Link
                 to="/about"
@@ -414,53 +410,54 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials with circular images */}
-      <section className="py-24 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-6">What Our Clients Say</h2>
+      {/* Redesigned Testimonials Section */}
+      <section className="py-24 bg-gradient-to-br from-gray-900 via-blue-950 to-gray-800 text-white relative overflow-hidden">
+        <div
+          className="absolute inset-0 pointer-events-none opacity-20"
+          style={{
+            background:
+              "radial-gradient(circle at 60% 40%, #2563eb33 0%, transparent 70%)",
+          }}
+        ></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-4xl font-bold mb-4">Client Reviews</h2>
             <p className="text-lg text-gray-300">
-              We take pride in our clients' satisfaction and the relationships
-              we build with them.
+              Hear what our clients have to say about their experience with
+              Lorins Consults.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-gray-800 p-8 rounded-2xl relative"
+          <div className="flex gap-8 overflow-x-auto md:grid md:grid-cols-3 md:gap-10 scrollbar-hide pb-4">
+            {testimonials.map((testimonial, idx) => (
+              <div
+                key={testimonial.name + idx}
+                className="min-w-[320px] md:min-w-0 bg-white/5 border border-blue-900 rounded-2xl shadow-lg p-8 flex flex-col justify-between hover:scale-[1.03] transition-transform duration-300"
               >
-                <svg
-                  className="w-12 h-12 text-blue-500 mb-6 opacity-50"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-                <p className="text-gray-300 mb-8 leading-relaxed italic">
+                <div className="flex items-center mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className={`w-5 h-5 ${
+                        i < testimonial.rating
+                          ? "text-yellow-400"
+                          : "text-gray-600"
+                      } drop-shadow`}
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-gray-200 italic mb-6 text-base leading-relaxed">
                   {testimonial.content}
                 </p>
-                <div className="flex items-center">
-                  <div className="w-14 h-14 rounded-full overflow-hidden mr-4 border-2 border-blue-500">
-                    <img
-                      src={testimonial.imageUrl}
-                      alt={testimonial.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-white">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-gray-400 text-sm">{testimonial.role}</p>
-                  </div>
+                <div className="mt-auto">
+                  <span className="block font-semibold text-white text-lg tracking-wide">
+                    {testimonial.name}
+                  </span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

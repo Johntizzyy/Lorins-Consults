@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../assets/blue-logo.png"
+import blueLogo from "../assets/blue-logo.png"
+import whiteLogo from "../assets/white-logo.png"
 import logoo from "../assets/lcologo.png"
 
 const Navbar = () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-          <img src={scrolled ? logoo : logo} alt="lc-logo" style={{"height":"50px"}}/>
+          <img src={scrolled ? blueLogo : whiteLogo} alt="lc-logo" style={{"height":"60px"}}/>
 
           <div className="w-10 h-10  rounded-lg flex items-center justify-center">
           {/* <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"> */}
