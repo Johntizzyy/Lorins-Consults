@@ -5,8 +5,8 @@ import siteImageOne from "../assets/training.jpg";
 import siteImageTwo from "../assets/site-image-1.jpg";
 import siteImageThree from "../assets/site-img-3.jpg";
 import lordmayor from "../assets/lordmayor.jpeg";
-import Oluwatobiloba from "../assets/Oluwatobiloba.png"
-import Omowumi from "../assets/Omowumi.png"
+import Oluwatobiloba from "../assets/Oluwatobiloba.png";
+import Omowumi from "../assets/Omowumi.png";
 import siteImageFour from "../assets/site-img-4.jpg";
 import siteImageFive from "../assets/site-img-2.jpg";
 import siteImageSix from "../assets/lc-img-2.jpg";
@@ -87,7 +87,8 @@ const About = () => {
     {
       name: "Adeniyi Oluwatobiloba O.",
       role: "Assitant Surveyor",
-      description: "Experience in land surveying and project management. Specializes in cadastral surveying, Topography survey, Route survey and major development",
+      description:
+        "Experience in land surveying and project management. Specializes in cadastral surveying, Topography survey, Route survey and major development",
       imageUrl: Oluwatobiloba,
     },
     {
@@ -96,7 +97,7 @@ const About = () => {
       description:
         "Expert in project coordination and client relations. Ensures smooth execution of all surveying projects.",
       imageUrl: Omowumi,
-    }
+    },
   ];
 
   const siteWorks = [
@@ -131,9 +132,15 @@ const About = () => {
       orientation: "portrait",
     },
     {
-      title: "Eko Atlantic City",
-      imageUrl: siteImageSix,
-      size: "large",
+      title: "Ibadan City Survey",
+      imageUrl: siteImageTwo,
+      size: "small",
+      orientation: "portrait",
+    },
+    {
+      title: "Abeokuta Mapping",
+      imageUrl: siteImageThree,
+      size: "small",
       orientation: "portrait",
     },
     {
