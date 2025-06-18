@@ -71,30 +71,12 @@ const Home = () => {
     },
   ];
 
-  const featuredProjects = [
-    {
-      title: "Lagos Waterfront Development",
-      description:
-        "Complete survey and mapping of 5km waterfront property for mixed-use development",
-      imageUrl:
-        "https://images.unsplash.com/photo-1618411340482-9b09509bc193?q=80&w=776&auto=format&fit=crop",
-      category: "Commercial",
-    },
-    {
-      title: "Abuja Residential Estate",
-      description:
-        "Cadastral and topographic survey for 50-acre residential estate development",
-      imageUrl:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=870&auto=format&fit=crop",
-      category: "Residential",
-    },
-  ];
-
   const testimonials = [
     {
       name: "Pst Oriowo Olufemi",
-      content: "A trusted and reliable man for you rland related and surveying Jobs",
-      rating:5
+      content:
+        "A trusted and reliable man for you rland related and surveying Jobs",
+      rating: 5,
     },
     {
       name: "Mrs. Abiola Akinyemi",
@@ -105,7 +87,7 @@ const Home = () => {
     {
       name: "Mr. Tunde Ogunlana",
       content:
-        "I’m truly impressed by the quality of service I received from Lorins Consults. They were prompt, respectful, and used modern equipment to get accurate results. Their attention to detail gave me peace of mind during my land purchase. Thank you for a job well done!",
+        "I'm truly impressed by the quality of service I received from Lorins Consults. They were prompt, respectful, and used modern equipment to get accurate results. Their attention to detail gave me peace of mind during my land purchase. Thank you for a job well done!",
       rating: 5,
     },
   ];
@@ -305,92 +287,6 @@ const Home = () => {
               className="btn btn-primary inline-flex items-center text-lg px-8 py-4"
             >
               View All Services
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              Featured Projects
-            </h2>
-            <p className="text-lg text-gray-700">
-              Lorins Consults' showcase of our expertise and excellence.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {featuredProjects.map((project, index) => (
-              <motion.div
-                key={project.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group relative overflow-hidden rounded-2xl"
-              >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10"></div>
-                <img
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-full h-[400px] object-cover transition-transform group-hover:scale-105 duration-700"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
-                  <span className="inline-block px-4 py-1 rounded-full bg-blue-600/80 text-white text-sm mb-4">
-                    {project.category}
-                  </span>
-                  <h3 className="text-2xl font-bold mb-3 text-white">
-                    {project.title}
-                  </h3>
-                  <p className="text-white/90 mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <Link
-                    to="/projects"
-                    className="inline-flex items-center text-white hover:text-blue-200 transition-colors"
-                  >
-                    View Project Details
-                    <svg
-                      className="w-5 h-5 ml-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-16">
-            <Link
-              to="/projects"
-              className="btn btn-primary inline-flex items-center text-lg px-8 py-4"
-            >
-              View All Projects
               <svg
                 className="w-5 h-5 ml-2"
                 fill="none"
