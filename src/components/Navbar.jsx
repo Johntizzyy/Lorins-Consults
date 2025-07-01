@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-          <img src={scrolled ? blueLogo : whiteLogo} alt="lc-logo" style={{"height":"60px"}}/>
+          <img src={scrolled ? blueLogo : whiteLogo} alt="lorins consults logo" style={{"height":"50px"}}/>
 
           <div className="w-10 h-10  rounded-lg flex items-center justify-center">
           {/* <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"> */}

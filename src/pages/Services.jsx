@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import surveying from "../assets/surveying.png";
+import cadastrial from "../assets/cadastrial.jpg";
+import hydrographySurvey from "../assets/hydrography.jpg";
+import Gis from "../assets/gis.jpg";
+import engineering from "../assets/engineering-survey.jpg";
+import topography from "../assets/topography.jpg";
+import instrument from "../assets/instrument.jpg"
+import landDocumentation from "../assets/land-documentation.png";
 
 const Services = () => {
   const services = [
@@ -14,8 +22,7 @@ const Services = () => {
         "Title surveys for land registration",
         "Boundary dispute resolution",
       ],
-      image:
-        "https://images.unsplash.com/photo-1580707221190-bd94d9087b45?q=80&w=1374&auto=format&fit=crop",
+      image: cadastrial,
       icon: (
         <svg
           className="w-16 h-16 text-blue-600"
@@ -43,8 +50,7 @@ const Services = () => {
         "Volume calculations for earthworks",
         "Feature mapping (structures, utilities, vegetation)",
       ],
-      image:
-        "https://images.unsplash.com/photo-1593115590489-eb3690435e25?q=80&w=1374&auto=format&fit=crop",
+      image: topography,
       icon: (
         <svg
           className="w-16 h-16 text-blue-600"
@@ -72,8 +78,7 @@ const Services = () => {
         "Pipeline and utility surveys",
         "As-built surveys for completed projects",
       ],
-      image:
-        "https://images.unsplash.com/photo-1614935842683-1756a14f416b?q=80&w=1374&auto=format&fit=crop",
+      image: engineering,
       icon: (
         <svg
           className="w-16 h-16 text-blue-600"
@@ -101,8 +106,7 @@ const Services = () => {
         "GIS database development and management",
         "Remote sensing and image analysis",
       ],
-      image:
-        "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?q=80&w=1470&auto=format&fit=crop",
+      image: Gis,
       icon: (
         <svg
           className="w-16 h-16 text-blue-600"
@@ -123,15 +127,14 @@ const Services = () => {
       id: "Hydrography survey",
       title: "Hydrography survey",
       description:
-      "We conduct precise hydrographic surveys to map underwater features and depths, supporting marine construction, navigation, and environmental monitoring projects.",
+        "We conduct precise hydrographic surveys to map underwater features and depths, supporting marine construction, navigation, and environmental monitoring projects.",
       features: [
         "Bathymetric mapping and depth measurement",
         "Underwater feature detection using sonar",
         "Tide and current analysis",
         "Support for dredging and marine infrastructure projects",
       ],
-      image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1470&auto=format&fit=crop",
+      image: hydrographySurvey,
       icon: (
         <svg
           className="w-16 h-16 text-blue-600"
@@ -159,8 +162,7 @@ const Services = () => {
         "Survey plan preparation and approval",
         "Legal boundary documentation",
       ],
-      image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1470&auto=format&fit=crop",
+      image: landDocumentation,
       icon: (
         <svg
           className="w-16 h-16 text-blue-600"
@@ -521,7 +523,7 @@ const Services = () => {
               className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1504812439049-5a9f885e065c?q=80&w=1374&auto=format&fit=crop"
+                src={instrument}
                 alt="Surveying equipment"
                 className="w-full h-full object-cover"
               />

@@ -2,16 +2,20 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 // import a from "../assets/a.JPG"
 import siteImageOne from "../assets/training.jpg";
+import Mission from "../assets/img-1.jpg";
 import siteImageTwo from "../assets/site-image-1.jpg";
 import siteImageThree from "../assets/site-img-3.jpg";
-import lordmayor from "../assets/lordmayor.jpeg";
+import lordmayor from "../assets/lordmayor-mod.jpg";
 import Oluwatobiloba from "../assets/Oluwatobiloba.png";
 import Omowumi from "../assets/Omowumi.png";
 import siteImageFour from "../assets/site-img-4.jpg";
 import siteImageFive from "../assets/site-img-2.jpg";
 import siteImageSix from "../assets/Oluwatoyin.jpg";
 import siteImageSeven from "../assets/John.jpg";
-import siteImageEight from "../assets/lc-img-3.jpg";
+import siteImageEigh from "../assets/lc-img-3.jpg";
+import siteImageEight from "../assets/site-img-8.jpg";
+import agm from "../assets/agm.jpg"
+
 
 const About = () => {
   const values = [
@@ -82,7 +86,7 @@ const About = () => {
       name: "Surveyor Amire Mayowa",
       role: "Lead Surveyor",
       description:
-        "Over 15 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
+        "Over 10 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
       imageUrl: lordmayor,
     },
     {
@@ -103,7 +107,7 @@ const About = () => {
 
   const siteWorks = [
     {
-      imageUrl: siteImageOne,
+      imageUrl: Mission,
       size: "large",
       orientation: "portrait",
     },
@@ -231,7 +235,7 @@ const About = () => {
               <img
                 src={lordmayor}
                 alt="Surveying team at work"
-                className="w-full h-[500px] object-contain"
+                className="w-full h-[500px] object-cover"
               />
             </motion.div>
           </div>
@@ -261,7 +265,7 @@ const About = () => {
             >
               <div className="h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=870&auto=format&fit=crop"
+                  src={agm}
                   alt="Our Mission"
                   className="w-full h-full object-cover"
                 />
@@ -287,7 +291,7 @@ const About = () => {
             >
               <div className="h-64 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=870&auto=format&fit=crop"
+                  src={siteImageOne}
                   alt="Our Vision"
                   className="w-full h-full object-cover"
                 />
