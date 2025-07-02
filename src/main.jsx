@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 
@@ -14,8 +14,9 @@ const root = createRoot(document.getElementById("root"));
 
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
+//  After hosting this on github, on the live link, its just showing only the logo and the footer unless i click on the logo to see the home page instead of showing the home page straight

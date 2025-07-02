@@ -32,3 +32,6 @@
     "vite": "^5.1.6"
   }
 }
+git add .
+git commit -m "Fix: Replaced BrowserRouter with HashRouter in main.jsx to ensure client-side routing works correctly when deployed to GitHub Pages."
+git push origin main
