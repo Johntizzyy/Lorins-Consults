@@ -7,7 +7,7 @@ import Gis from "../assets/gis.jpg";
 import engineering from "../assets/engineering-survey.jpg";
 import topography from "../assets/topography.jpg";
 import instrument from "../assets/instrument.jpg"
-import landDocumentation from "../assets/land-documentation.png";
+import landDocumentation from "../assets/land-document.jpg";
 
 const Services = () => {
   const services = [
@@ -228,7 +228,7 @@ const Services = () => {
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1682687982107-14943a5f836f?q=80&w=1374&auto=format&fit=crop')",
+              cadastrial,
             backgroundAttachment: "fixed",
           }}
         >
@@ -274,102 +274,69 @@ const Services = () => {
       </section>
 
       {/* Main Services Section - Alternating layout */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-10 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {services.map((service, index) => (
-            <div
-              key={service.id}
-              id={service.id}
-              className={`py-16 ${
-                index !== services.length - 1 ? "border-b border-gray-200" : ""
-              }`}
-            >
-              <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+            <h1 className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-6 text-gray-900">
+              Our Services
+            </h1>
+            <p className="text-base sm:text-lg text-gray-700">
+              Comprehensive surveying and mapping solutions tailored to your needs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
+            {services.map((service, idx) => (
+              <motion.div
+                key={service.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
               >
-                <motion.div
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                  className="space-y-6"
-                >
-                  <div className="inline-block p-3 bg-blue-50 rounded-xl">
-                    {service.icon}
-                  </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                    {service.title}
-                  </h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <svg
-                          className="w-6 h-6 text-blue-600 mt-0.5 mr-3"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="pt-4">
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
-                    >
-                      Request this service
-                      <svg
-                        className="w-5 h-5 ml-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                  className="relative rounded-2xl overflow-hidden shadow-xl h-[400px]"
-                >
+                <div className="h-48 sm:h-60 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="text-2xl font-bold text-white">
-                      {service.title}
-                    </h3>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          ))}
+                </div>
+                <div className="p-4 sm:p-8">
+                  <div className="mb-4 sm:mb-5">{service.icon}</div>
+                  <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4 text-gray-900">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+                    {service.description}
+                  </p>
+                  <ul className="mb-4 sm:mb-6 pl-4 list-disc text-gray-500 text-sm sm:text-base">
+                    {service.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
+                  <Link
+                    to={`#${service.id}`}
+                    className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors text-sm sm:text-base"
+                  >
+                    Learn more
+                    <svg
+                      className="w-5 h-5 ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -83,10 +83,10 @@ const About = () => {
   ];
   const team = [
     {
-      name: "Surveyor Amire Mayowa",
+      name: "Surv. Amire Mayowa (Mnis)",
       role: "Lead Surveyor",
       description:
-        "Over 10 years of experience in land surveying and project management. Specializes in cadastral surveying and major developments.",
+        "Over 10 years of experience in land surveying and project management. Specializes in cadastral, topography surveying and all major developments.",
       imageUrl: lordmayor,
     },
     {
@@ -152,12 +152,12 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[40vh] sm:h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url(${siteImageSeven})`,
-            backgroundAttachment: "fixed",
+            backgroundAttachment: "scroll",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-black/70"></div>
@@ -170,10 +170,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-white">
               About Lorins Consults
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-light mb-8 leading-relaxed">
+            <p className="text-base sm:text-xl md:text-2xl text-white/90 font-light mb-4 sm:mb-8 leading-relaxed">
               Nigeria's premier land surveying and consulting firm dedicated to
               precision, integrity, and excellence since 2021.
             </p>
@@ -182,19 +182,19 @@ const About = () => {
       </section>
 
       {/* Company Introduction */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">
                 Our Story
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 Lorins Consult began as a humble vision with just four
                 passionate team members. Though officially launched in October
                 2021, the groundwork had been quietly laid long before. From a
@@ -202,7 +202,7 @@ const About = () => {
                 root—driven by a commitment to excellence, integrity, and
                 innovation.
               </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 In just three years, Lorins Consult has grown to a dedicated
                 team of nearly ten professionals and has evolved into a
                 nationally recognized brand. Our rise has been steady, marked by
@@ -276,7 +276,7 @@ const About = () => {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   To deliver surveying solutions with integrity,
-                  professionalism, and a unique touch—shaping the industry and
+                  professionalism, and a unique touch. <br/> Shaping the industry and
                   inspiring the next generation of surveyors.{" "}
                 </p>
               </div>
@@ -302,7 +302,7 @@ const About = () => {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   To lead the future of surveying and land management through
-                  precision, integrity, and innovation—empowering the profession
+                  precision, integrity, and innovation. Empowering the profession
                   and shaping the next generation of surveyors.
                 </p>
               </div>

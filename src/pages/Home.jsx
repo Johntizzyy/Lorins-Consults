@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import topographyImg from "../assets/topography.jpg";
+import cadastrial from "../assets/cadastrial.jpg";
+import engineering from "../assets/engineering.jpg";
+import agm from "../assets/lc-img-2.jpg";
 
 const Home = () => {
   const services = [
@@ -23,8 +26,7 @@ const Home = () => {
           />
         </svg>
       ),
-      imageUrl:
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=870&auto=format&fit=crop",
+      imageUrl: cadastrial,
     },
     {
       title: "Topographic Survey",
@@ -66,8 +68,7 @@ const Home = () => {
           />
         </svg>
       ),
-      imageUrl:
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=870&auto=format&fit=crop",
+      imageUrl: engineering,
     },
   ];
 
@@ -99,8 +100,7 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1566974718480-e01ac14e5961?q=80&w=1740&auto=format&fit=crop')",
+            backgroundImage: agm,
             backgroundAttachment: "scroll",
           }}
         >
@@ -114,27 +114,27 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto pt-20"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white leading-tight">
               Precision Surveying Solutions
             </h1>
-            <p className="text-xl md:text-2xl mb-10 text-white/90 font-light">
+            <p className="text-base sm:text-lg md:text-2xl mb-6 sm:mb-10 text-white/90 font-light">
               Lorins Consults provides professional land surveying services
               across Nigeria.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 to="/services"
-                className="btn btn-primary text-lg px-8 py-4"
+                className="btn btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
               >
                 Our Services
               </Link>
               <a
-                href={`https://wa.me/+2341234567890?text=${encodeURIComponent(
-                  "Hello! I would like to get a quote for your surveying services."
+                href={`https://wa.me/+2347037905846?text=${encodeURIComponent(
+                  "Hello! I would like to get a quote for your surveying and landscaping services."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-white text-blue-800 hover:bg-gray-100 text-lg px-8 py-4"
+                className="btn bg-white text-blue-800 hover:bg-gray-100 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
               >
                 Get a Quote
               </a>
@@ -144,21 +144,21 @@ const Home = () => {
       </section>
 
       {/* Introduction Section with Stats */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">
                 Revolutionizing{" "}
                 <span className="text-gradient">the Surveying</span> Landcaping
                 in Nigeria
               </h2>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 leading-relaxed">
                 Delivering precision surveying with cutting-edge technology. Our
                 certified surveyors provide reliable data you can trust.
                 Contributing to the development of the next generation
@@ -166,7 +166,7 @@ const Home = () => {
               </p>
               <Link
                 to="/about"
-                className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
+                className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors text-base sm:text-lg"
               >
                 Learn more about our company
                 <svg
@@ -190,27 +190,39 @@ const Home = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 gap-8"
+              className="grid grid-cols-2 gap-4 sm:gap-8"
             >
-              <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">3+</div>
-                <div className="text-gray-600">Years of Experience</div>
+              <div className="bg-gray-50 p-4 sm:p-8 rounded-xl shadow-sm">
+                <div className="text-2xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">
+                  3+
+                </div>
+                <div className="text-gray-600 text-xs sm:text-base">
+                  Years of Experience
+                </div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">
+              <div className="bg-gray-50 p-4 sm:p-8 rounded-xl shadow-sm">
+                <div className="text-2xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">
                   200+
                 </div>
-                <div className="text-gray-600">Projects Completed</div>
+                <div className="text-gray-600 text-xs sm:text-base">
+                  Projects Completed
+                </div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
-                <div className="text-gray-600">Corporate Clients</div>
+              <div className="bg-gray-50 p-4 sm:p-8 rounded-xl shadow-sm">
+                <div className="text-2xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">
+                  50+
+                </div>
+                <div className="text-gray-600 text-xs sm:text-base">
+                  Corporate Clients
+                </div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-                <div className="text-4xl font-bold text-blue-600 mb-2">
+              <div className="bg-gray-50 p-4 sm:p-8 rounded-xl shadow-sm">
+                <div className="text-2xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">
                   100%
                 </div>
-                <div className="text-gray-600">Client Satisfaction</div>
+                <div className="text-gray-600 text-xs sm:text-base">
+                  Client Satisfaction
+                </div>
               </div>
             </motion.div>
           </div>
@@ -425,7 +437,27 @@ const Home = () => {
             </svg>
             <span className="text-gray-700">
               {" "}
-              +234 703 790 5846 , +234 812 140 7681
+              <a
+                href={`https://wa.me/+2347037905846?text=${encodeURIComponent(
+                  "Hello! I would like to inquire about your services."
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-colors"
+              >
+                +234 703 790 5846
+              </a>{" "}
+              ,{" "}
+              <a
+                href={`https://wa.me/+2348121407681?text=${encodeURIComponent(
+                  "Hello! I would like to inquire about your services."
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-colors"
+              >
+                +234 812 140 7681
+              </a>
             </span>
           </div>
           <div className="flex items-center">

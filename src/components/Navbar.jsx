@@ -97,8 +97,8 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href={`https://wa.me/+2341234567890?text=${encodeURIComponent(
-                "Hello! I would like to get a quote for your surveying services."
+              href={`https://wa.me/+2347037905846?text=${encodeURIComponent(
+                "Hello! I would like to get a quote for your surveying and landscaping services."
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -156,8 +156,8 @@ const Navbar = () => {
                 ))}
                 <div className="pt-2 mt-2 border-t">
                   <a
-                    href={`https://wa.me/+2341234567890?text=${encodeURIComponent(
-                      "Hello! I would like to get a quote for your surveying services."
+                    href={`https://wa.me/+2347037905846?text=${encodeURIComponent(
+                      "Hello! I would like to get a quote for your surveying and landscaping services."
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

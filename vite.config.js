@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/Lorins-Consults/", // 👈 IMPORTANT for GitHub Pages
+  base: "/", // 👈 Updated for Namecheap hosting
   plugins: [react()],
   server: {
     port: 5173,
