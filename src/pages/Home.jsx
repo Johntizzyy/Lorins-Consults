@@ -76,7 +76,7 @@ const Home = () => {
     {
       name: "Pst Oriowo Olufemi",
       content:
-        "A trusted and reliable man for you rland related and surveying Jobs",
+        "A trusted and reliable man for your land related and surveying Jobs",
       rating: 5,
     },
     {
