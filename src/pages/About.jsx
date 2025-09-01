@@ -6,16 +6,15 @@ import Mission from "../assets/img-1.jpg";
 import siteImageTwo from "../assets/site-image-1.jpg";
 import siteImageThree from "../assets/site-img-3.jpg";
 import lordmayor from "../assets/lordmayor-mod.jpg";
-import Oluwatobiloba from "../assets/Oluwatobiloba.png";
+import Oluwatobiloba from "../assets/Oluwatobiloba.jpeg";
 import Omowumi from "../assets/Omowumi.png";
 import siteImageFour from "../assets/site-img-4.jpg";
 import siteImageFive from "../assets/site-img-2.jpg";
-import siteImageSix from "../assets/Oluwatoyin.jpg";
+import siteImageSix from "../assets/oluwatoyin.jpeg";
 import siteImageSeven from "../assets/John.jpg";
 import siteImageEigh from "../assets/lc-img-3.jpg";
 import siteImageEight from "../assets/site-img-8.jpg";
-import agm from "../assets/agm.jpg"
-
+import agm from "../assets/agm.jpg";
 
 const About = () => {
   const values = [
@@ -30,7 +29,6 @@ const About = () => {
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
-          2
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -276,8 +274,8 @@ const About = () => {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   To deliver surveying solutions with integrity,
-                  professionalism, and a unique touch. <br/> Shaping the industry and
-                  inspiring the next generation of surveyors.{" "}
+                  professionalism, and a unique touch. <br /> Shaping the
+                  industry and inspiring the next generation of surveyors.{" "}
                 </p>
               </div>
             </motion.div>
@@ -302,8 +300,8 @@ const About = () => {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   To lead the future of surveying and land management through
-                  precision, integrity, and innovation. Empowering the profession
-                  and shaping the next generation of surveyors.
+                  precision, integrity, and innovation. Empowering the
+                  profession and shaping the next generation of surveyors.
                 </p>
               </div>
             </motion.div>

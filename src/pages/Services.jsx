@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import surveying from "../assets/surveying.png";
+// import surveying from "../assets/surveying.png"; // File not found
 import cadastrial from "../assets/cadastrial.jpg";
-import hydrographySurvey from "../assets/hydrography.jpg";
-import Gis from "../assets/gis.jpg";
+import hydrographySurvey from "../assets/hydrography-survey.png";
+import Gis from "../assets/gis-mapping.png";
 import engineering from "../assets/engineering-survey.jpg";
 import topography from "../assets/topography.jpg";
-import instrument from "../assets/instrument.jpg"
-import landDocumentation from "../assets/land-document.jpg";
+import instrument from "../assets/instrument.jpg";
+import landDocumentation from "../assets/land-documentation.png";
 
 const Services = () => {
   const services = [
@@ -227,8 +227,7 @@ const Services = () => {
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat"
           style={{
-            backgroundImage:
-              cadastrial,
+            backgroundImage: `url(${cadastrial})`,
             backgroundAttachment: "fixed",
           }}
         >
@@ -281,7 +280,8 @@ const Services = () => {
               Our Services
             </h1>
             <p className="text-base sm:text-lg text-gray-700">
-              Comprehensive surveying and mapping solutions tailored to your needs.
+              Comprehensive surveying and mapping solutions tailored to your
+              needs.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
