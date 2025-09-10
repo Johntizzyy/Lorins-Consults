@@ -128,19 +128,6 @@ const Home = () => {
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-center lg:text-left"
             >
-              {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8"
-              >
-                <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-                <span className="text-white/90 font-medium">
-                  Professional Surveying Services
-                </span>
-              </motion.div>
-
               {/* Main Heading */}
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -228,7 +215,7 @@ const Home = () => {
                 className="relative z-10"
               >
                 <img
-                    src={hero}
+                  src={hero}
                   alt="Professional Surveyor at Work"
                   className="w-full h-96 object-top object-cover rounded-3xl shadow-2xl"
                 />
