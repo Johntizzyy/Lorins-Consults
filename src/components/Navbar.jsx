@@ -84,7 +84,7 @@ const Navbar = () => {
 
             {/* Professional Surveying Services Badge */}
             <div
-              className={`inline-flex items-center rounded-full px-4 py-1.5 mt-2 text-xs font-medium transition-all duration-300 ${
+              className={`hidden sm:inline-flex items-center rounded-full px-4 py-1.5 mt-2 text-xs font-medium transition-all duration-300 ${
                 scrolled
                   ? "bg-blue-50 text-blue-700 border border-blue-200"
                   : "bg-white/10 backdrop-blur-md border border-white/20 text-white/90"
