@@ -119,7 +119,7 @@ const Home = () => {
         </div>
 
         {/* Main Hero Content */}
-        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <motion.div
@@ -133,7 +133,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
               >
                 Precision{" "}
                 <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
@@ -147,7 +147,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl sm:text-2xl text-white/80 mb-8 leading-relaxed max-w-2xl"
+                className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl"
               >
                 Leading Nigeria's surveying industry with cutting-edge
                 technology, unmatched precision, and professional excellence
@@ -163,7 +163,7 @@ const Home = () => {
               >
                 <Link
                   to="/services"
-                  className="group relative inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-2xl shadow-2xl hover:bg-blue-700 transform hover:-translate-y-1 transition-all duration-300"
+                  className="group relative inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-2xl hover:bg-blue-700 transform hover:-translate-y-1 transition-all duration-300"
                 >
                   <span>Explore Services</span>
                   <svg
@@ -186,7 +186,7 @@ const Home = () => {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-2xl hover:bg-white/20 transform hover:-translate-y-1 transition-all duration-300"
+                  className="group inline-flex items-center justify-center px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transform hover:-translate-y-1 transition-all duration-300"
                 >
                   <svg
                     className="w-5 h-5 mr-2"
@@ -217,9 +217,9 @@ const Home = () => {
                 <img
                   src={hero}
                   alt="Professional Surveyor at Work"
-                  className="w-full h-96 object-top object-cover rounded-3xl shadow-2xl"
+                  className="w-full h-80 object-top object-cover rounded-2xl shadow-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
               </motion.div>
 
               {/* Floating Cards */}
@@ -227,13 +227,13 @@ const Home = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="absolute -top-6 -right-6 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/20"
+                className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-2xl border border-white/20"
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">
+                  <div className="text-2xl font-bold text-blue-600 mb-1">
                     200+
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-xs text-gray-600 font-medium">
                     Projects Completed
                   </div>
                 </div>
@@ -243,13 +243,13 @@ const Home = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/20"
+                className="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-2xl border border-white/20"
               >
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600 mb-1">
+                  <div className="text-2xl font-bold text-green-600 mb-1">
                     100%
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-xs text-gray-600 font-medium">
                     Client Satisfaction
                   </div>
                 </div>
