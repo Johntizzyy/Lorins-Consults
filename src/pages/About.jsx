@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import a from "../assets/a.JPG"
 import siteImageOne from "../assets/training.jpg";
 import Mission from "../assets/img-1.jpg";
 import siteImageTwo from "../assets/site-image-1.jpg";

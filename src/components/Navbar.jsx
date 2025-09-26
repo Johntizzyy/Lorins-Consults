@@ -130,7 +130,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile Navigation Button */}
+          {/* Mobile Navigation Button */} 
           <button
             className="lg:hidden p-2 rounded-md focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
