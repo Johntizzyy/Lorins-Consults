@@ -258,9 +258,9 @@ const Footer = () => {
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-500 text-sm">
-                Designed with ❤️ by{" "}
+                Designed by{" "}
                 <strong>
-                  <a href="#" target="_blank">
+                  <a href="https://adepoju-john-portfolio.vercel.app/" target="_blank">
                     Adepoju John
                   </a>{" "}
                 </strong>
