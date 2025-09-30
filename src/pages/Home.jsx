@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import topographyImg from "../assets/topography.jpg";
 import cadastrial from "../assets/cadastrial.jpg";
 import engineering from "../assets/engineering.jpg";
-import agm from "../assets/lc-img-2.jpg";
 import siteImage1 from "../assets/site-image-1.jpg";
 import siteImage2 from "../assets/site-img-2.jpg";
 import siteImage3 from "../assets/site-img-3.jpg";
@@ -101,9 +100,9 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "3+", label: "Years of Excellence", icon: "" },
-    { number: "200+", label: "Projects Completed", icon: "" },
-    { number: "50+", label: "Corporate Clients", icon: "" },
+    { number: "15+", label: "Years of Excellence", icon: "" },
+    { number: "500+", label: "Projects Completed", icon: "" },
+    { number: "100+", label: "Corporate Clients", icon: "" },
     { number: "100%", label: "Client Satisfaction", icon: "" },
   ];
 
@@ -513,7 +512,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-300">
               Client Reviews
             </h2>
             <p className="text-xl text-gray-300">

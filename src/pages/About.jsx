@@ -208,15 +208,15 @@ const About = () => {
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">3+</div>
+                  <div className="text-4xl font-bold text-blue-600">15+</div>
                   <div className="text-gray-600">Years of Excellence</div>
                 </div>
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">200+</div>
+                  <div className="text-4xl font-bold text-blue-600">500+</div>
                   <div className="text-gray-600">Projects Completed</div>
                 </div>
                 <div className="bg-gray-50 p-5 rounded-lg text-center w-40">
-                  <div className="text-4xl font-bold text-blue-600">10+</div>
+                  <div className="text-4xl font-bold text-blue-600">20+</div>
                   <div className="text-gray-600">Expert Team Members</div>
                 </div>
               </div>
