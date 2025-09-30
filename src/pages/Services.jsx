@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import surveying from "../assets/surveying.png"; // File not found
 import cadastrial from "../assets/cadastrial.jpg";
-import hydrographySurvey from "../assets/hydrography-survey.png";
-import Gis from "../assets/gis-mapping.png";
+import hydrographySurvey from "../assets/hydrography.jpg";
+import Gis from "../assets/gis.jpg";
 import engineering from "../assets/engineering-survey.jpg";
 import topography from "../assets/topography.jpg";
 import instrument from "../assets/instrument.jpg";
-import landDocumentation from "../assets/land-documentation.png";
+import landDocumentation from "../assets/land-documentation.jpg";
 
 const Services = () => {
   const services = [

@@ -5,10 +5,8 @@ import cadastrial from "../assets/cadastrial.jpg";
 import engineering from "../assets/engineering.jpg";
 import siteImage1 from "../assets/site-image-1.jpg";
 import siteImage2 from "../assets/site-img-2.jpg";
-import siteImage3 from "../assets/site-img-3.jpg";
 import instrument from "../assets/instrument.jpg";
 import training from "../assets/training.jpg";
-import lordmayor from "../assets/lordmayor.jpeg";
 import hero from "../assets/hero.jpg";
 
 const Home = () => {
