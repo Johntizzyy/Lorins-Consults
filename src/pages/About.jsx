@@ -11,7 +11,6 @@ import siteImageFour from "../assets/site-img-4.jpg";
 import siteImageFive from "../assets/site-img-2.jpg";
 import siteImageSix from "../assets/oluwatoyin.jpeg";
 import siteImageSeven from "../assets/John.jpg";
-import siteImageEigh from "../assets/lc-img-3.jpg";
 import siteImageEight from "../assets/site-img-8.jpg";
 import agm from "../assets/agm.jpg";
 
